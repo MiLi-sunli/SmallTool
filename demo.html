@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+  table { border-collapse: collapse;}
+  tr td { border: 0.5px solid darkgrey;text-align-last: center;padding: 5px}
+  .caseClass {width: 15%}
+  .resultClass {width: 5%}
+  .fieldClass {width: 15%}
+  .lineClass {width: 7%}
+  .fileClass {width: 40%}
+  .oneClass {width:100%;background-color: aliceblue}
+  .twoCalss {background-color: aliceblue}
+  .dataCheckClass {background-color: cadetblue;}
+  .fileCheckClass {background-color: cadetblue;}
+
+</style>
+<body>
+  <table class="oneClass" >
+    <tr>
+      <td colspan="2" class="fileCheckClass">FileCheck</td>
+    </tr>
+    <tr>
+      <td width="50%">File not generated</td>
+      <td width="50%">File generated</td>
+    <tr>
+      <td>hsbcfd_crds_dmreq_2_888888888888882_al_in_sas_ser.csv</td>
+      <td>hsbcfd_crds_bse_2_888888888888882.csv</td>
+    </tr>
+    <tr>
+      <td>hsbcfd_crds_dmreq_2_888888888888882_al_in_sas_ser.csv</td>
+      <td>hsbcfd_crds_bse_2_888888888888882.csv</td>
+    </tr>
+    <tr>
+      <td>hsbcfd_crds_dmreq_2_888888888888882_al_in_sas_ser.csv</td>
+      <td>hsbcfd_crds_bse_2_888888888888882.csv</td>
+    </tr>
+  </table>
+<p></p>
+<table width="100%" class="twoCalss">
+  <tr>
+    <td colspan="6" class="dataCheckClass">File comparison results generated</td>
+  </tr>
+
+  <tr>
+    <td class="caseClass" >CaseId</td>
+    <td class="resultClass">Result</td>
+    <td class="fieldClass">Field</td>
+    <td class="lineClass">Line<br>number</td>
+    <td class="fileClass">File</td>
+    <td class="towClass" colspan="4">Comparison</td>
+  </tr>
+
+  <tr>
+    <td>218888888888881</td>
+    <td style="color: forestgreen">Pass</td>
+    <td colspan="4">The comparison results are consistent</td>
+  </tr>
+
+
+  <tr>
+    <td rowspan="4">888888888888882</td>
+    <td rowspan="4" style="color: brown">Fail</td>
+    <td rowspan="4">inp_am_payload</td>
+    <td rowspan="2">1</td>
+    <td>hsbcfd_crds_dmreq_2_888888888888882_al_in_sas_ser.csv</td>
+    <td>00000002</td>
+  </tr>
+  <tr>
+    <td>hsbcfd_crds_dmres_2_888888888888882_al_out_sas_ser.csv</td>
+    <td>00000040</td>
+  </tr>
+  <tr>
+    <td rowspan="2">2</td>
+    <td>hsbcfd_crds_dmreq_2_888888888888882_al_in_sas_ser.csv</td>
+    <td>00000013</td>
+  </tr>
+  <tr>
+    <td>hsbcfd_crds_dmres_2_888888888888882_al_out_sas_ser.csv</td>
+    <td>00000452</td>
+  </tr>
+
+
+  <tr>
+    <td>219888888888881</td>
+    <td style="color: forestgreen">Pass</td>
+    <td colspan="4">The comparison results are consistent</td>
+  </tr>
+
+
+  <tr>
+    <td rowspan="4">888888888888893</td>
+    <td rowspan="4" style="color: brown">Fail</td>
+    <td rowspan="4">inp_am_payload</td>
+    <td rowspan="2">1</td>
+    <td>hsbcfd_crds_dmreq_2_888888888888882_al_in_sas_ser.csv</td>
+    <td>00000002</td>
+  </tr>
+  <tr>
+    <td>hsbcfd_crds_dmres_2_888888888888882_al_out_sas_ser.csv</td>
+    <td>00000040</td>
+  </tr>
+
+
+
+</table>
+</body>
+</html>
